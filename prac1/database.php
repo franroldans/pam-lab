@@ -1,9 +1,9 @@
 <?php 
 	// Define Database parameters
-	$servername = "localhost";
-	$username = "root";
-	$password = "333551";
-	$dbName = "newDB";
+	$servername = //YOUR_SERVER_NAME;
+	$username = //YOUR_USER_NAME;
+	$password = //YOUR_PASSWORD;
+	$dbName = //YOUT DB NAME;
 				
 	// Connect to the database	
 	function connect ()
