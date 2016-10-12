@@ -1,10 +1,10 @@
 <?php 
 	// Define Database parameters
-	$servername = "localhost";
-	$username = "root";
-	$password = "333551";
-	$dbName = "newDB";
-	$dbTable = "Users";
+	$servername = //SET YOUR SERVER NAME HERE
+	$username =//SET YOUR USERNAME  HERE
+	$password = //SET YOUR PASSWORD  HERE
+	$dbName = //SET YOUR DATABASE NAME  HERE
+	$dbTable = //SET YOUR DATABASE'S TABLE NAME  HERE
 				
 	// Connect to the database	
 	function connect ()
