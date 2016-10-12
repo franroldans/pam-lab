@@ -36,7 +36,7 @@
 
 	<p>
 	<b>Click Here to modify information about a user:</b>
-	<button type="button" onclick="location.href = 'modify.php?old_user=&new_user=&new_pswd=&new_name=&new_surname=';">Modify User</button>
+	<button type="button" onclick="location.href = 'modify.php?old_user=&old_pswd=&new_user=&new_pswd=&new_name=&new_surname=';">Modify User</button>
 	</p>
 	</body>
 </html> 
