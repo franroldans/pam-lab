@@ -1,10 +1,10 @@
 <?php 
 	// Define Database parameters
-	$servername = //SET YOUR SERVER NAME HERE
-	$username =//SET YOUR USERNAME  HERE
-	$password = //SET YOUR PASSWORD  HERE
-	$dbName = //SET YOUR DATABASE NAME  HERE
-	$dbTable = //SET YOUR DATABASE'S TABLE NAME  HERE
+	$servername = "localhost";
+	$username = "root";
+	$password = // INSERT YOUR PASSWORD
+	$dbName = // INSERT YOUR DATABASE'S NAME
+	$dbTable = // INSERT THE USER TABLE'S NAME 
 				
 	// Connect to the database	
 	function connect ()
@@ -42,25 +42,35 @@
 		}			
 	}
 
-	//Function that gets all users info and //TODO: print it on an HTML table.
+	//Function that gets all users info and print it on an HTML table.
         function get_user_list ($conn)
 	{
 		global $dbTable;
 		$sql = "SELECT * FROM `" . $dbTable . "`" ;
 		
 		$result = mysqli_query($conn, $sql);			
-
+		echo '<table class="table table-striped table-bordered table-hover">'; 
+		echo "<tr><th>Username</th><th>Password</th><th>Name</th><th>Surname</th></tr>"; 
 		if (mysqli_num_rows($result) > 0) {
 			// output data of each row
 			while($row = mysqli_fetch_assoc($result)) 
 			{		
-			echo json_encode($row) . "<br>";			
+				echo "<tr><td>";
+				echo $row['username'];
+				echo "</td><td>";
+				echo $row['password'];
+				echo "</td><td>";
+				echo $row['name'];
+				echo "</td><td>";
+				echo $row['surname'];
+				echo "</td></tr>";
 			}
 		} 		
 		else 
         {
 			echo "0 results";
-		}			
+		}
+		echo "</table>";			
 	}
 
 	//Function that handles the addition of a user.

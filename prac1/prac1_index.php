@@ -39,4 +39,10 @@
 	<button type="button" onclick="location.href = 'modify.php?old_user=&old_pswd=&new_user=&new_pswd=&new_name=&new_surname=';">Modify User</button>
 	</p>
 	</body>
+
+	<style>
+	table, th, td {
+	    border: 1px solid black;
+	}
+	</style>
 </html> 
