@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <div align="center">
+            <div>
+                <h1>Free Seats Query: </h1><br><br>
+                <form action="webresources/generic/free" method="get">
+                    Flight ID:<input type="text" name="id"/>
+                    Date:<input type="text" name="fecha"/>
+                    <input type="submit" name="submit" value="Send"/>
+                </form>
+            </div>
+            <br><br><br>
+            <div>
+                <h1>Book a Seat: </h1><br><br>
+                <form action="webresources/generic/reserve" method="post">
+                   Flight ID: <input type="text" name="id"/>
+                   Date:<input type="text" name="fecha"/>
+                   Seats:<input type="text" name="seats"/>
+                    <input type="submit" name="submit" value="Send"/>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
